@@ -1,9 +1,12 @@
+/**
+ * exercise for albert our beautiful teacher
+ * @author yoad
+ * @version 1.0
+ */
 package com.example.dialog2;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,9 +17,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
 import static android.graphics.Color.WHITE;
-
 public class MainActivity extends AppCompatActivity {
 AlertDialog.Builder builder;
 LinearLayout screen;
