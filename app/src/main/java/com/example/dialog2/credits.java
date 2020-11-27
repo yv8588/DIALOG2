@@ -20,7 +20,7 @@ public class credits extends AppCompatActivity {
      * creats the xml generl option menu
      * <p>
      * @param menu the xml general menu
-     * @return
+     * @return true if the menu was created
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

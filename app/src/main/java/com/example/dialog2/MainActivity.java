@@ -67,14 +67,17 @@ int[] rgb={0,0,0};
         builder=new AlertDialog.Builder(this);
         builder.setCancelable(false);
         builder.setTitle("choose color combination");
+        rgb[0]=0;
+        rgb[1]=0;
+        rgb[2]=0;
         builder.setMultiChoiceItems(colors, null, new DialogInterface.OnMultiChoiceClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which, boolean isChecked) {
                 if(isChecked)
                     rgb[which]=255;
-                else if(rgb[which]==255)
+                else if (rgb[which]==255)
                     rgb[which]=0;
-            }
+                }
         });
         builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
             @Override
@@ -127,10 +130,10 @@ int[] rgb={0,0,0};
     }
 
     /**
-     * creats the xml generl option menu
+     * creates the xml general option menu
      * <p>
      * @param menu the xml general menu
-     * @return
+     * @return true if the menu was created
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
